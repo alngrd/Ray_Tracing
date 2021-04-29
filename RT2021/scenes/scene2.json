@@ -1,0 +1,334 @@
+{
+  "name": "scene2",
+  "maxRecursionLevel": 2,
+  "antiAliasingFactor": 1,
+  "renderRefractions": false,
+  "renderReflections": true,
+  "camera": {
+    "cameraPosition": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    },
+    "centerPoint": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "towardsVec": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": -1.0
+    },
+    "upVec": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    },
+    "rightVec": {
+      "x": 1.0,
+      "y": -0.0,
+      "z": 0.0
+    },
+    "planeWidth": 200.0,
+    "distanceToPlain": 1.0,
+    "resX": 200.0,
+    "resY": 200.0
+  },
+  "ambient": {
+    "x": 0.2,
+    "y": 0.1,
+    "z": 0.0
+  },
+  "backgroundColor": {
+    "x": 0.0,
+    "y": 0.5,
+    "z": 1.0
+  },
+  "lightSources": [
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.CutoffSpotlight",
+      "DATA": {
+        "direction": {
+          "x": 0.0,
+          "y": 0.5,
+          "z": -1.0
+        },
+        "cutoffAngle": 36.0,
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "kq": 0.01,
+        "kl": 0.1,
+        "kc": 1.0,
+        "intensity": {
+          "x": 0.3,
+          "y": 0.9,
+          "z": 0.2
+        }
+      }
+    },
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.CutoffSpotlight",
+      "DATA": {
+        "direction": {
+          "x": 0.5,
+          "y": 0.0,
+          "z": -1.0
+        },
+        "cutoffAngle": 25.0,
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "kq": 0.01,
+        "kl": 0.1,
+        "kc": 1.0,
+        "intensity": {
+          "x": 0.9,
+          "y": 0.5,
+          "z": 0.5
+        }
+      }
+    },
+    {
+      "CLASSNAME": "edu.cg.scene.lightSources.CutoffSpotlight",
+      "DATA": {
+        "direction": {
+          "x": -0.4,
+          "y": -0.3,
+          "z": -1.0
+        },
+        "cutoffAngle": 45.0,
+        "position": {
+          "x": -0.2,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "kq": 0.01,
+        "kl": 0.1,
+        "kc": 1.0,
+        "intensity": {
+          "x": 0.3,
+          "y": 0.5,
+          "z": 0.9
+        }
+      }
+    }
+  ],
+  "surfaces": [
+    {
+      "shape": {
+        "CLASSNAME": "edu.cg.scene.objects.Plain",
+        "DATA": {
+          "a": 1.0,
+          "b": 0.0,
+          "c": -0.1,
+          "d": -3.0
+        }
+      },
+      "material": {
+        "Ka": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "Kd": {
+          "x": 0.6,
+          "y": 0.0,
+          "z": 0.8
+        },
+        "Ks": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.7
+        },
+        "shininess": 20,
+        "isReflecting": true,
+        "Kr": {
+          "x": 0.3,
+          "y": 0.3,
+          "z": 0.3
+        },
+        "isTransparent": false,
+        "Kt": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "refractionIndex": 1.5
+      }
+    },
+    {
+      "shape": {
+        "CLASSNAME": "edu.cg.scene.objects.Plain",
+        "DATA": {
+          "a": 0.0,
+          "b": 0.0,
+          "c": -1.0,
+          "d": -3.5
+        }
+      },
+      "material": {
+        "Ka": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "Kd": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.0
+        },
+        "Ks": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.7
+        },
+        "shininess": 10,
+        "isReflecting": true,
+        "Kr": {
+          "x": 0.3,
+          "y": 0.3,
+          "z": 0.3
+        },
+        "isTransparent": false,
+        "Kt": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "refractionIndex": 1.5
+      }
+    },
+    {
+      "shape": {
+        "CLASSNAME": "edu.cg.scene.objects.Plain",
+        "DATA": {
+          "a": -1.0,
+          "b": 0.0,
+          "c": -0.1,
+          "d": -3.0
+        }
+      },
+      "material": {
+        "Ka": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "Kd": {
+          "x": 0.0,
+          "y": 0.9,
+          "z": 0.5
+        },
+        "Ks": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.7
+        },
+        "shininess": 15,
+        "isReflecting": true,
+        "Kr": {
+          "x": 0.3,
+          "y": 0.3,
+          "z": 0.3
+        },
+        "isTransparent": false,
+        "Kt": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "refractionIndex": 1.5
+      }
+    },
+    {
+      "shape": {
+        "CLASSNAME": "edu.cg.scene.objects.Plain",
+        "DATA": {
+          "a": 0.0,
+          "b": 1.0,
+          "c": -0.1,
+          "d": -3.0
+        }
+      },
+      "material": {
+        "Ka": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "Kd": {
+          "x": 0.0,
+          "y": 0.4,
+          "z": 0.4
+        },
+        "Ks": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.7
+        },
+        "shininess": 10,
+        "isReflecting": true,
+        "Kr": {
+          "x": 0.3,
+          "y": 0.3,
+          "z": 0.3
+        },
+        "isTransparent": false,
+        "Kt": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "refractionIndex": 1.5
+      }
+    },
+    {
+      "shape": {
+        "CLASSNAME": "edu.cg.scene.objects.Plain",
+        "DATA": {
+          "a": 0.0,
+          "b": -1.0,
+          "c": -0.1,
+          "d": -3.0
+        }
+      },
+      "material": {
+        "Ka": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "Kd": {
+          "x": 0.9,
+          "y": 0.0,
+          "z": 0.1
+        },
+        "Ks": {
+          "x": 0.7,
+          "y": 0.7,
+          "z": 0.7
+        },
+        "shininess": 15,
+        "isReflecting": true,
+        "Kr": {
+          "x": 0.3,
+          "y": 0.3,
+          "z": 0.3
+        },
+        "isTransparent": false,
+        "Kt": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "refractionIndex": 1.5
+      }
+    }
+  ]
+}
